@@ -13,7 +13,7 @@ class Movies extends Component {
         const {length:movieCount} =this.state.movies
         if(movieCount===0)return <p>There are no movies in the database.</p>
         return (
-            <>   
+            <React.Fragment>   
                 <p>Showing {movieCount} movies in the database</p> 
                 <table class="table">
                     <thead>
@@ -37,7 +37,7 @@ class Movies extends Component {
                         ))}
                     </tbody>
                 </table>
-            </>
+            </React.Fragment>
         );
     }
 }
